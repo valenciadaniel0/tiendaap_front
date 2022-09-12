@@ -4,9 +4,9 @@ import TableRow from "./tableRow";
 
 const ElementsTable = (props) => {
   const renderItems = () => {
-    return props.items.map((item) => {
+    return props.items.map((item, i) => {
       return (
-        <Table.Row>
+        <Table.Row key={`table-row-${i}`}>
           <Table.Cell>
             <Image
               size="small"
