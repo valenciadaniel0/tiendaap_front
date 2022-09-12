@@ -7,7 +7,7 @@ class Detail extends React.Component {
     super();
     this.state = { category: props.item.category, product: props.item.product };
   }
-  productDetail() {
+  renderDetail() {
     return (
       <Grid>
         <Grid.Row>
@@ -41,7 +41,7 @@ class Detail extends React.Component {
   render() {
     return (
       <ContentModal title={this.productTitle()} open={true}>
-        {this.productDetail()}
+        {this.renderDetail()}
       </ContentModal>
     );
   }
