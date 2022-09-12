@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { search } from "../actions/item";
 import Button from "./button";
 import Field from "./field";
-import HomeNav from "./layouts/homeNav";
 import Detail from "./items/detail";
 import ErrorAlert from "./alerts/errorAlert";
 import CategoriesList from "./categories/list";
@@ -39,7 +38,6 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <HomeNav />
         <div className="ui container">
           {this.renderErrorMessage()}
           <div className="ui fluid input">

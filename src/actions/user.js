@@ -18,3 +18,10 @@ export const login = (email, password) => async (dispatch) => {
     });
   }
 };
+
+export const logout = () => (dispatch) => {
+  dispatch({
+    type: "USER_SESSION",
+    payload: null,
+  });
+};
