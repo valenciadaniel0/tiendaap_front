@@ -5,6 +5,8 @@ import HomeNav from "./layouts/homeNav";
 import Login from "./login";
 import Home from "./home";
 import Profile from "./users/profile";
+import Management from "./management";
+import ProductDetails from "./products/details";
 
 class App extends React.Component {
   conditionalRendering() {
@@ -13,6 +15,8 @@ class App extends React.Component {
         <React.Fragment>
           <Route path="/" element={<Home />} />
           <Route path="users/profile" element={<Profile />} />
+          <Route path="management" element={<Management />} />
+          <Route path="products/:id" element={ <ProductDetails /> } />
         </React.Fragment>
       );
     } else {

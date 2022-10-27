@@ -15,6 +15,11 @@ class HomeNav extends React.Component {
         <Menu.Item name="home">
           <Link to="/">Home</Link>
         </Menu.Item>
+        <Menu.Item name="management">
+          <Link to="/management">
+            Management
+          </Link>
+        </Menu.Item>
         <Menu.Menu position="right">
           <Dropdown item text={this.props.user.name}>
             <Dropdown.Menu>
